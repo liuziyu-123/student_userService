@@ -1,0 +1,573 @@
+2022-06-21 09:46:07.143  INFO 10140 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 10140 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 09:46:07.193  INFO 10140 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 09:46:11.953  INFO 10140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 09:46:11.974  INFO 10140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 09:46:12.244  INFO 10140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 0 Redis repository interfaces.
+2022-06-21 09:46:13.004  INFO 10140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$c43f1038] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 09:46:13.863  INFO 10140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 09:46:13.903  INFO 10140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 09:46:13.903  INFO 10140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 09:46:13.903  INFO 10140 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 09:46:13.903  INFO 10140 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 09:46:13.903  INFO 10140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 09:46:13.903  INFO 10140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 09:46:13.993  INFO 10140 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 09:46:14.293  INFO 10140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 09:46:14.293  INFO 10140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6592 ms
+2022-06-21 09:46:17.184  INFO 10140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 09:46:17.194 DEBUG 10140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 09:46:17.304 DEBUG 10140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 09:46:17.314 DEBUG 10140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 09:46:17.344 DEBUG 10140 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 09:46:17.764  INFO 10140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 09:46:17.774  INFO 10140 --- [main] com.student.userService.UserApplication  : Started UserApplication in 13.1 seconds (JVM running for 16.2)
+2022-06-21 09:48:36.688  INFO 10140 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 09:48:36.688  INFO 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 09:48:36.688 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 09:48:36.699 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 09:48:36.699  INFO 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-06-21 09:48:36.758 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/getTsInfo", parameters={masked}
+2022-06-21 09:48:36.781 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+2022-06-21 09:48:36.797 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-06-21 09:48:36.798 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-06-21 09:48:36.803 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 09:48:36.805 DEBUG 10140 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 09:48:36.958 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 09:48:36.962 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 09:48:36 CST 2022, status=404, error=Not Found, message=, path=/ts/getTsInfo}]
+2022-06-21 09:48:37.221 DEBUG 10140 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-06-21 09:48:50.647 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 09:48:50.647 DEBUG 10140 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 09:48:50.707 DEBUG 10140 --- [http-nio-8081-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 09:48:50.731  WARN 10140 --- [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 09:48:50.733 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 09:48:50.735 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 09:48:50.737 DEBUG 10140 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 09:48:50.741 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 09:48:50.742 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 09:48:50 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 09:48:50.746 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 09:49:15.144 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 09:49:15.145 DEBUG 10140 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 09:49:15.146 DEBUG 10140 --- [http-nio-8081-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 09:49:15.146  WARN 10140 --- [http-nio-8081-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 09:49:15.146 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 09:49:15.146 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 09:49:15.149 DEBUG 10140 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 09:49:15.151 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 09:49:15.151 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 09:49:15 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 09:49:15.158 DEBUG 10140 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 09:57:29.975 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10&TsVo=null", parameters={masked}
+2022-06-21 09:57:29.976 DEBUG 10140 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 09:57:29.977 DEBUG 10140 --- [http-nio-8081-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Required TsVo parameter 'tsVo' is not present
+2022-06-21 09:57:29.977  WARN 10140 --- [http-nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required TsVo parameter 'tsVo' is not present]
+2022-06-21 09:57:29.978 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 09:57:29.978 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10&TsVo=null", parameters={masked}
+2022-06-21 09:57:29.978 DEBUG 10140 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 09:57:29.979 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 09:57:29.980 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 09:57:29 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 09:57:29.984 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 09:58:13.062 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10&tsVo=null", parameters={masked}
+2022-06-21 09:58:13.062 DEBUG 10140 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 09:58:13.063 DEBUG 10140 --- [http-nio-8081-exec-9] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 09:58:13.063  WARN 10140 --- [http-nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 09:58:13.064 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 09:58:13.065 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10&tsVo=null", parameters={masked}
+2022-06-21 09:58:13.066 DEBUG 10140 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 09:58:13.066 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 09:58:13.067 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 09:58:13 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 09:58:13.069 DEBUG 10140 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 10:03:03.183  INFO 10140 --- [http-nio-8081-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/ts/tsInfo?page=1&pageSize=10&tsVo={}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-06-21 10:03:35.821 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 10:03:35.823 DEBUG 10140 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 10:03:35.824 DEBUG 10140 --- [http-nio-8081-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 10:03:35.825  WARN 10140 --- [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 10:03:35.825 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 10:03:35.831 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 10:03:35.831 DEBUG 10140 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 10:03:35.832 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 10:03:35.833 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 10:03:35 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 10:03:35.838 DEBUG 10140 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 11:01:59.316 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:01:59.318 DEBUG 10140 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:01:59.320 DEBUG 10140 --- [http-nio-8081-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 11:01:59.321  WARN 10140 --- [http-nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 11:01:59.321 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 11:01:59.321 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:01:59.322 DEBUG 10140 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:01:59.323 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:01:59.323 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:01:59 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 11:01:59.327 DEBUG 10140 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 11:02:44.437  INFO 7036 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 7036 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:02:44.447  INFO 7036 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:02:46.387  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:02:46.387  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:02:46.437  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2022-06-21 11:02:46.647  INFO 7036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$c26b0b54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:02:47.657  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:02:47.697  INFO 7036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:02:47.697  INFO 7036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:02:47.697  INFO 7036 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:02:47.697  INFO 7036 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:02:47.697  INFO 7036 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:02:47.697  INFO 7036 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:02:47.757  INFO 7036 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:02:48.017  INFO 7036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:02:48.017  INFO 7036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3490 ms
+2022-06-21 11:02:49.227  INFO 7036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:02:49.237 DEBUG 7036 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:02:49.267 DEBUG 7036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:02:49.277 DEBUG 7036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:02:49.287 DEBUG 7036 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:02:49.447  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:02:49.457  INFO 7036 --- [main] com.student.userService.UserApplication  : Started UserApplication in 5.88 seconds (JVM running for 7.377)
+2022-06-21 11:02:57.208  INFO 7036 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:02:57.208  INFO 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:02:57.209 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:02:57.217 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:02:57.217  INFO 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-06-21 11:02:57.245 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:02:57.254 DEBUG 7036 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:02:57.313  WARN 7036 --- [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo)]
+2022-06-21 11:02:57.329 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:02:57.334 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:02:57.336 DEBUG 7036 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:02:57.362 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:02:57.363 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:02:57 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:02:57.425 DEBUG 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:03:10.912 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 11:03:10.917 DEBUG 7036 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:03:10.919  WARN 7036 --- [http-nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo)]
+2022-06-21 11:03:10.919 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:03:10.920 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 11:03:10.920 DEBUG 7036 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:03:10.920 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:03:10.920 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:03:10 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:03:10.920 DEBUG 7036 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:04:04.033  INFO 5316 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 5316 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:04:04.033  INFO 5316 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:04:04.663  INFO 5316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:04:04.663  INFO 5316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:04:04.683  INFO 5316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-06-21 11:04:04.823  INFO 5316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$fbc52cd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:04:05.013  INFO 5316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:04:05.023  INFO 5316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:04:05.023  INFO 5316 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:04:05.083  INFO 5316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:04:05.083  INFO 5316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2022-06-21 11:04:06.093  INFO 5316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:04:06.103 DEBUG 5316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:04:06.133 DEBUG 5316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:04:06.143 DEBUG 5316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:04:06.153 DEBUG 5316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:04:06.323  INFO 5316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:04:06.333  INFO 5316 --- [main] com.student.userService.UserApplication  : Started UserApplication in 2.676 seconds (JVM running for 3.585)
+2022-06-21 11:04:18.656  INFO 5316 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:04:18.656  INFO 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:04:18.656 DEBUG 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:04:18.668 DEBUG 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:04:18.669  INFO 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-06-21 11:04:18.702 DEBUG 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 11:04:18.712 DEBUG 5316 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int)
+2022-06-21 11:04:18.913 DEBUG 5316 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:04:18.913 DEBUG 5316 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@4d40eb00]
+2022-06-21 11:04:18.948 DEBUG 5316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 11:04:56.043 DEBUG 5316 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:04:56.043 DEBUG 5316 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int)
+2022-06-21 11:04:56.044 DEBUG 5316 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:04:56.044 DEBUG 5316 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@229c6f5b]
+2022-06-21 11:04:56.044 DEBUG 5316 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 11:05:47.812  INFO 10956 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 10956 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:05:47.812  INFO 10956 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:05:48.552  INFO 10956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:05:48.555  INFO 10956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:05:48.589  INFO 10956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-06-21 11:05:48.996  INFO 10956 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$58960acf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:05:49.376  INFO 10956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:05:49.384  INFO 10956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:05:49.384  INFO 10956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:05:49.386  INFO 10956 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:05:49.386  INFO 10956 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:05:49.387  INFO 10956 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:05:49.387  INFO 10956 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:05:49.391  INFO 10956 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:05:49.488  INFO 10956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:05:49.488  INFO 10956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1616 ms
+2022-06-21 11:05:51.309  INFO 10956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:05:51.319 DEBUG 10956 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:05:51.356 DEBUG 10956 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:05:51.367 DEBUG 10956 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:05:51.382 DEBUG 10956 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:05:51.551  INFO 10956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:05:51.562  INFO 10956 --- [main] com.student.userService.UserApplication  : Started UserApplication in 4.14 seconds (JVM running for 5.208)
+2022-06-21 11:07:10.822  INFO 10956 --- [http-nio-8081-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/ts/tsInfo?page=1&pageSize=10&tsVo={%22tsName%22:%22%E5%88%98%E6%A2%93%E6%AF%93%22}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-06-21 11:11:45.794  INFO 10956 --- [http-nio-8081-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:11:45.795  INFO 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:11:45.796 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:11:45.808 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:11:45.808  INFO 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-06-21 11:11:45.819 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:11:45.822 DEBUG 10956 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:11:45.847 DEBUG 10956 --- [http-nio-8081-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Required TsVo parameter 'tsVo' is not present
+2022-06-21 11:11:45.850  WARN 10956 --- [http-nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required TsVo parameter 'tsVo' is not present]
+2022-06-21 11:11:45.851 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:11:45.858 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:11:45.862 DEBUG 10956 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:11:45.904 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:11:45.905 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:11:45 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:11:45.959 DEBUG 10956 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:11:54.106 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:11:54.106 DEBUG 10956 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:11:54.106 DEBUG 10956 --- [http-nio-8081-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Required TsVo parameter 'tsVo' is not present
+2022-06-21 11:11:54.106  WARN 10956 --- [http-nio-8081-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required TsVo parameter 'tsVo' is not present]
+2022-06-21 11:11:54.106 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:11:54.106 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:11:54.112 DEBUG 10956 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:11:54.113 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:11:54.113 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:11:54 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:11:54.113 DEBUG 10956 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:12:13.739  INFO 12196 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 12196 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:12:13.739  INFO 12196 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:12:14.679  INFO 12196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:12:14.679  INFO 12196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:12:14.699  INFO 12196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-06-21 11:12:14.859  INFO 12196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$46288c78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:12:15.059  INFO 12196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:12:15.059  INFO 12196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:12:15.059  INFO 12196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:12:15.069  INFO 12196 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:12:15.069  INFO 12196 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:12:15.069  INFO 12196 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:12:15.069  INFO 12196 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:12:15.069  INFO 12196 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:12:15.119  INFO 12196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:12:15.119  INFO 12196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1300 ms
+2022-06-21 11:12:16.369  INFO 12196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:12:16.369 DEBUG 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:12:16.409 DEBUG 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:12:16.419 DEBUG 12196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:12:16.429 DEBUG 12196 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:12:16.559  INFO 12196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:12:16.569  INFO 12196 --- [main] com.student.userService.UserApplication  : Started UserApplication in 3.154 seconds (JVM running for 3.992)
+2022-06-21 11:12:31.944  INFO 12196 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:12:31.945  INFO 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:12:31.946 DEBUG 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:12:31.958 DEBUG 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:12:31.959  INFO 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2022-06-21 11:12:31.968 DEBUG 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:12:31.973 DEBUG 12196 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:12:32.168 DEBUG 12196 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 11:12:32.226 DEBUG 12196 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:12:32.228 DEBUG 12196 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@f5f8490]
+2022-06-21 11:12:32.249 DEBUG 12196 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 11:12:57.417  INFO 16552 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 16552 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:12:57.417  INFO 16552 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:12:58.107  INFO 16552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:12:58.107  INFO 16552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:12:58.137  INFO 16552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-06-21 11:12:58.367  INFO 16552 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$70bc9d56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:12:58.637  INFO 16552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:12:58.637  INFO 16552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:12:58.637  INFO 16552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:12:58.647  INFO 16552 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:12:58.647  INFO 16552 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:12:58.647  INFO 16552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:12:58.647  INFO 16552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:12:58.647  INFO 16552 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:12:58.867  INFO 16552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:12:58.867  INFO 16552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
+2022-06-21 11:13:05.531  INFO 16552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:13:05.561 DEBUG 16552 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:13:06.131 DEBUG 16552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:13:06.231 DEBUG 16552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:13:06.321 DEBUG 16552 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:13:07.796  INFO 16552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:13:07.936  INFO 16552 --- [main] com.student.userService.UserApplication  : Started UserApplication in 10.875 seconds (JVM running for 11.786)
+2022-06-21 11:13:23.055  INFO 16552 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:13:23.056  INFO 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:13:23.056 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:13:23.122 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:13:23.122  INFO 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 66 ms
+2022-06-21 11:13:23.171 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 11:13:23.184 DEBUG 16552 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:13:23.299 DEBUG 16552 --- [http-nio-8081-exec-1] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 11:13:23.304  WARN 16552 --- [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 11:13:23.305 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 11:13:23.312 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 11:13:23.315 DEBUG 16552 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:13:23.475 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:13:23.479 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:13:23 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 11:13:23.682 DEBUG 16552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 11:13:49.821 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={masked}
+2022-06-21 11:13:49.821 DEBUG 16552 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:13:49.822 DEBUG 16552 --- [http-nio-8081-exec-4] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found
+2022-06-21 11:13:49.823  WARN 16552 --- [http-nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.student.userService.Vo.TsVo': no matching editors or conversion strategy found]
+2022-06-21 11:13:49.823 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2022-06-21 11:13:49.826 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={masked}
+2022-06-21 11:13:49.828 DEBUG 16552 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:13:49.829 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:13:49.829 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:13:49 CST 2022, status=500, error=Internal Server Error, message=, path=/ts (truncated)...]
+2022-06-21 11:13:49.830 DEBUG 16552 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-06-21 11:22:38.626 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo", parameters={}
+2022-06-21 11:22:38.628 DEBUG 16552 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:22:38.628 DEBUG 16552 --- [http-nio-8081-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Required TsVo parameter 'tsVo' is not present
+2022-06-21 11:22:38.630  WARN 16552 --- [http-nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required TsVo parameter 'tsVo' is not present]
+2022-06-21 11:22:38.632 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:22:38.632 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-06-21 11:22:38.633 DEBUG 16552 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:22:38.633 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:22:38.634 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:22:38 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:22:38.639 DEBUG 16552 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:25:55.884 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:25:55.884 DEBUG 16552 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:25:55.885 DEBUG 16552 --- [http-nio-8081-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [2] in public com.student.userService.Utils.ApiResult com.student.userService.Controller.ts.TsController.getTsInfo(int,int,com.student.userService.Vo.TsVo): Required TsVo parameter 'tsVo' is not present
+2022-06-21 11:25:55.885  WARN 16552 --- [http-nio-8081-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required TsVo parameter 'tsVo' is not present]
+2022-06-21 11:25:55.885 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-06-21 11:25:55.886 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:25:55.888 DEBUG 16552 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-06-21 11:25:55.889 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:25:55.889 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Jun 21 11:25:55 CST 2022, status=400, error=Bad Request, message=, path=/ts/tsInfo}]
+2022-06-21 11:25:55.890 DEBUG 16552 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-06-21 11:26:23.169  INFO 10684 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 10684 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:26:23.179  INFO 10684 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:26:23.619  INFO 10684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:26:23.619  INFO 10684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:26:23.639  INFO 10684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2022-06-21 11:26:23.769  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$d2297b91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:26:23.969  INFO 10684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:26:23.969  INFO 10684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:26:23.979  INFO 10684 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:26:24.029  INFO 10684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:26:24.029  INFO 10684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2022-06-21 11:26:25.322  INFO 10684 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:26:25.332 DEBUG 10684 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:26:25.392 DEBUG 10684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:26:25.402 DEBUG 10684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:26:25.422 DEBUG 10684 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:26:25.672  INFO 10684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:26:25.692  INFO 10684 --- [main] com.student.userService.UserApplication  : Started UserApplication in 2.734 seconds (JVM running for 3.328)
+2022-06-21 11:26:29.327  INFO 10684 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:26:29.328  INFO 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:26:29.328 DEBUG 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:26:29.337 DEBUG 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:26:29.340  INFO 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2022-06-21 11:26:29.349 DEBUG 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:26:29.356 DEBUG 10684 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:26:29.652 DEBUG 10684 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 11:26:29.827 DEBUG 10684 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:26:29.829 DEBUG 10684 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@b3908c9]
+2022-06-21 11:26:29.868 DEBUG 10684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 11:27:17.578  INFO 18292 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 18292 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 11:27:17.578  INFO 18292 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 11:27:18.208  INFO 18292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 11:27:18.218  INFO 18292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 11:27:18.238  INFO 18292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2022-06-21 11:27:18.448  INFO 18292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$5cda2637] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 11:27:18.688  INFO 18292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 11:27:18.698  INFO 18292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 11:27:18.698  INFO 18292 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 11:27:18.768  INFO 18292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 11:27:18.768  INFO 18292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2022-06-21 11:27:20.038  INFO 18292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 11:27:20.048 DEBUG 18292 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 11:27:20.098 DEBUG 18292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 11:27:20.108 DEBUG 18292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 11:27:20.128 DEBUG 18292 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 11:27:20.298  INFO 18292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 11:27:20.308  INFO 18292 --- [main] com.student.userService.UserApplication  : Started UserApplication in 3.03 seconds (JVM running for 6.796)
+2022-06-21 11:27:39.563  INFO 18292 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 11:27:39.563  INFO 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 11:27:39.564 DEBUG 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 11:27:39.575 DEBUG 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 11:27:39.576  INFO 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2022-06-21 11:27:39.596 DEBUG 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 11:27:39.603 DEBUG 18292 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 11:27:39.736 DEBUG 18292 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 11:27:39.805 DEBUG 18292 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 11:27:39.808 DEBUG 18292 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@53538cd6]
+2022-06-21 11:27:39.850 DEBUG 18292 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 13:33:41.743  INFO 18292 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:33:55.736  INFO 19556 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 19556 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 13:33:55.746  INFO 19556 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 13:33:56.806  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 13:33:56.806  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 13:33:56.836  INFO 19556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2022-06-21 13:33:57.026  INFO 19556 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$845e5a23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 13:33:57.586  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 13:33:57.626  INFO 19556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 13:33:57.626  INFO 19556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 13:33:57.626  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 13:33:57.626  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 13:33:57.626  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 13:33:57.626  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 13:33:57.666  INFO 19556 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 13:33:57.796  INFO 19556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 13:33:57.796  INFO 19556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1990 ms
+2022-06-21 13:33:59.016  INFO 19556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:33:59.026 DEBUG 19556 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 13:33:59.056 DEBUG 19556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 13:33:59.066 DEBUG 19556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 13:33:59.086 DEBUG 19556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 13:33:59.266  INFO 19556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 13:33:59.276  INFO 19556 --- [main] com.student.userService.UserApplication  : Started UserApplication in 3.965 seconds (JVM running for 4.808)
+2022-06-21 13:34:12.286  INFO 19556 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 13:34:12.287  INFO 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 13:34:12.287 DEBUG 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 13:34:12.295 DEBUG 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 13:34:12.295  INFO 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-06-21 13:34:12.302 DEBUG 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 13:34:12.309 DEBUG 19556 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 13:34:12.393 DEBUG 19556 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 13:34:12.425 DEBUG 19556 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 13:34:12.426 DEBUG 19556 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@63f7a556]
+2022-06-21 13:34:12.441 DEBUG 19556 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 13:34:32.265  INFO 18216 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 18216 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 13:34:32.265  INFO 18216 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 13:34:32.935  INFO 18216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 13:34:32.935  INFO 18216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 13:34:32.955  INFO 18216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-06-21 13:34:33.135  INFO 18216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$b15abefa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 13:34:33.355  INFO 18216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 13:34:33.355  INFO 18216 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 13:34:33.415  INFO 18216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 13:34:33.415  INFO 18216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2022-06-21 13:34:34.425  INFO 18216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:34:34.425 DEBUG 18216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 13:34:34.465 DEBUG 18216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 13:34:34.475 DEBUG 18216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 13:34:34.485 DEBUG 18216 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 13:34:34.625  INFO 18216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 13:34:34.625  INFO 18216 --- [main] com.student.userService.UserApplication  : Started UserApplication in 2.716 seconds (JVM running for 3.852)
+2022-06-21 13:34:46.052  INFO 18216 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 13:34:46.052  INFO 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 13:34:46.053 DEBUG 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 13:34:46.060 DEBUG 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 13:34:46.061  INFO 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-06-21 13:34:46.073 DEBUG 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 13:34:46.078 DEBUG 18216 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 13:34:46.178 DEBUG 18216 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 13:34:46.212 DEBUG 18216 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 13:34:46.213 DEBUG 18216 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@7d83d20c]
+2022-06-21 13:34:46.233 DEBUG 18216 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 13:37:57.785 DEBUG 18216 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 13:37:57.786 DEBUG 18216 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 13:37:57.787 DEBUG 18216 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 13:37:57.788 DEBUG 18216 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 13:37:57.789 DEBUG 18216 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@2bd993d3]
+2022-06-21 13:37:57.791 DEBUG 18216 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 13:39:06.351  INFO 15700 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 15700 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 13:39:06.351  INFO 15700 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 13:39:06.791  INFO 15700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 13:39:06.791  INFO 15700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 13:39:06.801  INFO 15700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2022-06-21 13:39:06.941  INFO 15700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$3089bb54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 13:39:07.131  INFO 15700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 13:39:07.141  INFO 15700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 13:39:07.141  INFO 15700 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 13:39:07.191  INFO 15700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 13:39:07.191  INFO 15700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2022-06-21 13:39:07.381  INFO 15700 --- [main] o.apache.catalina.core.StandardContext   : Suspicious URL pattern: [/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+2022-06-21 13:39:08.231  INFO 15700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:39:08.241 DEBUG 15700 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 13:39:08.271 DEBUG 15700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 13:39:08.281 DEBUG 15700 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 13:39:08.291 DEBUG 15700 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 13:39:08.431  INFO 15700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 13:39:08.441  INFO 15700 --- [main] com.student.userService.UserApplication  : Started UserApplication in 2.305 seconds (JVM running for 2.977)
+2022-06-21 13:39:13.024  INFO 15700 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 13:39:13.024  INFO 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 13:39:13.024 DEBUG 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 13:39:13.037 DEBUG 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 13:39:13.037  INFO 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-06-21 13:39:13.050 DEBUG 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 13:39:13.052 DEBUG 15700 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 13:39:13.169 DEBUG 15700 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 13:39:13.205 DEBUG 15700 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 13:39:13.205 DEBUG 15700 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@6656cbd8]
+2022-06-21 13:39:13.226 DEBUG 15700 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-06-21 13:49:36.072  INFO 9496 --- [main] com.student.userService.UserApplication  : Starting UserApplication on DESKTOP-DQS4SD0 with PID 9496 (D:\Projects\StudentProject\student_Backend\userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\userService\student-userService)
+2022-06-21 13:49:36.072  INFO 9496 --- [main] com.student.userService.UserApplication  : No active profile set, falling back to default profiles: default
+2022-06-21 13:49:36.732  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 13:49:36.732  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 13:49:36.752  INFO 9496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-06-21 13:49:36.932  INFO 9496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$db0b9c0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 13:49:37.122  INFO 9496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 13:49:37.132  INFO 9496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-06-21 13:49:37.132  INFO 9496 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-06-21 13:49:37.182  INFO 9496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-21 13:49:37.182  INFO 9496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2022-06-21 13:49:38.252  INFO 9496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:49:38.252 DEBUG 9496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-06-21 13:49:38.282 DEBUG 9496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-06-21 13:49:38.292 DEBUG 9496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-06-21 13:49:38.302 DEBUG 9496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-06-21 13:49:38.432  INFO 9496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-21 13:49:38.442  INFO 9496 --- [main] com.student.userService.UserApplication  : Started UserApplication in 2.735 seconds (JVM running for 3.56)
+2022-06-21 13:49:48.482  INFO 9496 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 13:49:48.483  INFO 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 13:49:48.483 DEBUG 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-06-21 13:49:48.497 DEBUG 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-06-21 13:49:48.497  INFO 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2022-06-21 13:49:48.510 DEBUG 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ts/tsInfo?page=1&pageSize=10", parameters={masked}
+2022-06-21 13:49:48.517 DEBUG 9496 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.student.userService.Controller.ts.TsController#getTsInfo(int, int, TsVo)
+2022-06-21 13:49:48.635 DEBUG 9496 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TsVo(tsName=刘梓毓, tsNo=null, identiity=null, province=null, city=null, area=null)]
+2022-06-21 13:49:48.670 DEBUG 9496 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-06-21 13:49:48.676 DEBUG 9496 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.student.userService.Utils.ApiResult@3e00d4a3]
+2022-06-21 13:49:48.712 DEBUG 9496 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
