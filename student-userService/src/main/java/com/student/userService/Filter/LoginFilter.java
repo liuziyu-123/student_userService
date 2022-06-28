@@ -15,7 +15,7 @@ import java.io.PrintWriter;
 /**
  * 登录过滤器
  */
-@WebFilter("/db/selectStudent/*")
+@WebFilter("/user/login")
 public class LoginFilter implements Filter {
 
     @Autowired

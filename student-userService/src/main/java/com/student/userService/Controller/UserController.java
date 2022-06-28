@@ -7,11 +7,10 @@ import com.student.userService.Utils.ApiResult;
 import com.student.userService.Utils.JwtHelper;
 import com.student.userService.Utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpServletRequest;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -43,6 +42,19 @@ public class UserController {
         //删除redis 中的token
         redisUtil.remove(token);
         return ApiResult.success("成功退出");
-
     }
+
+    @GetMapping("verification")
+    public ApiResult verification() {
+        String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789";
+        Random ran = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= 4; i++) {
+            int index = ran.nextInt(str.length());
+            char ch = str.charAt(index);
+            sb.append(ch);
+        }
+        return ApiResult.success(sb);
+    }
+
 }

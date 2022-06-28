@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.student.userService.Mapper.TsMapper">
+
+    <insert id="insertTs" parameterType="com.student.userService.Vo.TsVo">
+        insert into user(
+        id,user_name,mobile,sex,user_no,identity,age,birthday,password,
+        province,city,area,create_time,create_by,modify_time,modify_by
+        ) values (
+        #{user.id}, #{user.userName}, #{user.mobile}, #{user.sex}, #{user.userNo},
+        #{user.identity}, #{user.age}, #{user.birthday},
+        #{user.password}, #{user.province}, #{user.city}, #{user.area},
+        #{user.createTime}, #{user.createBy},#{user.modifyTime},#{user.modifyBy}
+        )
+    </insert>
+
+</mapper>

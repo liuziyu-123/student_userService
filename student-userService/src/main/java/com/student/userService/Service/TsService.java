@@ -10,5 +10,19 @@ import java.util.List;
  */
 public interface TsService {
 
+    /**
+     * 获取师生列表
+     * @param page  页数
+     * @param pageSize  每页个数
+     * @param tsVo
+     * @return
+     */
     List<User> getTsInfo(int page, int pageSize, TsVo tsVo);
+
+    /**
+     * 新增师生信息
+     * @param user
+     * @return
+     */
+    int insertTs(User user);
 }
