@@ -1,6 +1,5 @@
 package com.student.userService.Controller;
 
-
 import com.student.userService.Dao.User;
 import com.student.userService.Service.IUserService;
 import com.student.userService.Utils.ApiResult;
@@ -19,6 +18,7 @@ public class UserController {
 
     @Autowired
     private IUserService userService;
+
     @Autowired
     private  RedisUtil redisUtil;
 

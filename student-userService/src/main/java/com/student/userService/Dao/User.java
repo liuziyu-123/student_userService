@@ -26,17 +26,17 @@ public class User {
 
     private int identity;
 
-    private int userNo;
+    private String userNo;
 
-    private Date brithday;
+    private String birthday;
 
-    private Date createTime;
+    private String createTime;
 
     private String createBy;
 
     private String modifyBy;
 
-    private Date modifyTime;
+    private String modifyTime;
 
 
 }

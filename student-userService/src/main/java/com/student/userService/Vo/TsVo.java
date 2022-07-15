@@ -8,7 +8,7 @@ public class TsVo {
 
     private String tsNo;
 
-    private String identiity;
+    private String identity;
 
     private String province;
 

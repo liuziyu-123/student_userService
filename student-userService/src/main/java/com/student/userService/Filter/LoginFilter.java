@@ -3,6 +3,9 @@ package com.student.userService.Filter;
 import com.alibaba.fastjson.JSONObject;
 import com.student.userService.Utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.annotation.Order;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -16,15 +19,17 @@ import java.io.PrintWriter;
  * 登录过滤器
  */
 @WebFilter("/user/login")
+@Order(1)
 public class LoginFilter implements Filter {
 
     @Autowired
     private RedisUtil redisUtil;
 
-
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        ServletContext servletContext = filterConfig.getServletContext();
+        ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        redisUtil=ctx.getBean(RedisUtil.class);
     }
 
     @Override

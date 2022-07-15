@@ -3,6 +3,7 @@ package com.student.userService.Service;
 import com.student.userService.Dao.User;
 import com.student.userService.Vo.TsVo;
 
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -25,4 +26,6 @@ public interface TsService {
      * @return
      */
     int insertTs(User user);
+
+    int outEx(String massage);
 }

@@ -3,13 +3,14 @@ package com.student.userService.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Service;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 @Service
-public class RedisUtil {
+public  class RedisUtil {
 
     @Autowired
     private  RedisTemplate redisTemplate;

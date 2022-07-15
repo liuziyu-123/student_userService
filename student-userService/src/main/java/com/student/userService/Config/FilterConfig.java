@@ -8,12 +8,23 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FilterConfig {
     @Bean
-    public FilterRegistrationBean registFilter(){
+    public FilterRegistrationBean GlobelFilter(){
         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         registrationBean.setFilter(new GlobleFilter());
         registrationBean.addUrlPatterns("/*");
-        registrationBean.setName("Filter1");
-        registrationBean.setOrder(1);
+        
+        registrationBean.setName("globle");
+        registrationBean.setOrder(2);
         return registrationBean;
     }
+
+//    @Bean
+//    public FilterRegistrationBean registFilter(){
+//        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+//        registrationBean.setFilter(new LoginFilter());
+//        registrationBean.addUrlPatterns("/user/login");
+//        registrationBean.setName("login");
+//        registrationBean.setOrder(1);
+//        return registrationBean;
+//    }
 }
