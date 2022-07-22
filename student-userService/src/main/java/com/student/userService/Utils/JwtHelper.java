@@ -12,12 +12,13 @@ public class JwtHelper {
     private static String tokenSignKey = " 123456";
 
     //根据参数生成toker
-    public static String createToken(String userId, String userName) {
+    public static String createToken(String userId, String userName,String userNo) {
         String token = Jwts.builder()
                 .setSubject(" YYGH-USER")
                 .setExpiration(new Date(System.currentTimeMillis() + tokenExpiration))
                 .claim("userId", userId)
                 .claim("userName", userName)
+                .claim("userNo",userNo)
                 .signWith(SignatureAlgorithm.HS512, tokenSignKey)
                 .compressWith(CompressionCodecs.GZIP)
                 .compact();
@@ -42,6 +43,17 @@ public class JwtHelper {
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(tokenSignKey).parseClaimsJws(token);
         Claims claims = claimsJws.getBody();
         return  (String) claims.get("userName");
+
+    }
+
+    //根据token字符串得到用户名称
+    public static String getUserNo(String token) {
+        if (StringUtils.isEmpty(token)) {
+            return "";
+        }
+        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(tokenSignKey).parseClaimsJws(token);
+        Claims claims = claimsJws.getBody();
+        return  (String) claims.get("userNo");
 
     }
 

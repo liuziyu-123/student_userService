@@ -30,13 +30,13 @@ public class User {
 
     private String birthday;
 
-    private String createTime;
+    private Date createTime;
 
     private String createBy;
 
     private String modifyBy;
 
-    private String modifyTime;
+    private Date modifyTime;
 
 
 }

@@ -7,6 +7,42 @@
         where mobile=#{mobile} and password=#{password}
     </select>
 
+    <insert id="insertTs" parameterType="com.student.userService.Dao.User">
+        insert into user(
+        id,user_name,mobile,sex,user_no,identity,age,birthday,password,
+        province,city,area,create_by,modify_by) values
+        (#{id}, #{userName}, #{mobile}, #{sex}, #{userNo},
+        #{identity}, #{age}, #{birthday,jdbcType=DATE},
+        #{password}, #{province}, #{city}, #{area},
+         #{createBy},#{modifyBy})
+    </insert>
+
+    <select id="getUserList" parameterType="com.student.userService.Vo.UserVo" resultType="com.student.userService.Dao.User">
+        select *
+        from user
+        where
+        1=1
+        <if test="userName !=null and userName != ''">
+            and  user_name=userName
+        </if>
+        <if test="userNo !=null and userNo != ''">
+            and  user_no=userNo
+        </if>
+        <if test="identity !=null and identity != ''">
+            and  identity=identity
+        </if>
+        <if test="province !=null and province != ''">
+            and  province=province
+        </if>
+        <if test="city !=null and city != ''">
+            and  city=city
+        </if>
+        <if test="area !=null and area != ''">
+            and  area=area
+        </if>
+
+    </select>
+
 
 
 </mapper>

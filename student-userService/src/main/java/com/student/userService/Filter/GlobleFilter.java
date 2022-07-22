@@ -14,10 +14,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebFilter("/**")
 public class GlobleFilter implements Filter {
-    private String map;
+    List<String> mapList;
 
     @Autowired
     private  RedisUtil redisUtil;
@@ -27,7 +29,7 @@ public class GlobleFilter implements Filter {
         System.out.println("过滤器执行了。。。。。。");
         ServletContext servletContext = filterConfig.getServletContext();
         ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);
-        map = ctx.getEnvironment().getProperty("white.list.login");
+        mapList=map(ctx);
         redisUtil=ctx.getBean(RedisUtil.class);
     }
 
@@ -47,7 +49,12 @@ public class GlobleFilter implements Filter {
         response.setContentType("application/json; charset=utf-8");
         //获取Header中的token
         String uri=request.getRequestURI();
-        if(!uri.equals(map)){
+        for(String item:mapList){
+            if(uri.equals(item) || uri.endsWith(".jpg")){
+                filterChain.doFilter(servletRequest,servletResponse);
+                return;
+            }
+        }
             String token =request.getHeader("token");
             if(token==null){
                 throw new MyException("没有Token");
@@ -66,15 +73,22 @@ public class GlobleFilter implements Filter {
                 PrintWriter out=response.getWriter();
                 out.write(data);
             }
-
-        }else{
-            filterChain.doFilter(servletRequest,servletResponse);
-        }
-
     }
 
     @Override
     public void destroy() {
         System.out.println("过滤器结束了");
+    }
+
+
+    public List<String> map(ApplicationContext ctx){
+        List<String> mapList=new ArrayList<>();
+        String login = ctx.getEnvironment().getProperty("white.list.login");
+        String upload=ctx.getEnvironment().getProperty("white.list.upload");
+        String fileUUID=ctx.getEnvironment().getProperty("/file/{fileUUID}");
+        mapList.add(login);
+        mapList.add(upload);
+        mapList.add(fileUUID);
+        return mapList;
     }
 }

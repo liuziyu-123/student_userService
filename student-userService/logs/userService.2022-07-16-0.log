@@ -1,0 +1,219 @@
+2022-07-16 09:58:06.937 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 11760 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 09:58:06.947 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 09:58:07.547 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 09:58:09.687 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 09:58:09.708 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 09:58:09.747 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-07-16 09:58:10.307 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$5cda2637] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-16 09:58:11.408 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-07-16 09:58:11.437 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-16 09:58:11.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-16 09:58:11.527 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-07-16 09:58:11.778 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-16 09:58:11.778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4650 ms
+2022-07-16 09:58:14.578 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-16 09:58:14.587 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-16 09:58:14.667 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2022-07-16 09:58:14.677 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-16 09:58:14.687 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-16 09:58:15.278 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-07-16 09:58:15.317 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-16 09:58:15.327 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 12.044 seconds (JVM running for 16.036)
+2022-07-16 10:01:10.615 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-16 10:01:10.616 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-16 10:01:10.616 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-07-16 10:01:10.649 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-16 10:01:10.649 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 33 ms
+2022-07-16 10:01:10.671 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/user/login", parameters={}
+2022-07-16 10:01:10.691 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.UserController#login(User)
+2022-07-16 10:01:10.942 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [User(id=null, mobile=17605603455, userName=null, password=123456, province=null, city=null, area=nul (truncated)...]
+2022-07-16 10:01:11.024 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-07-16 10:01:17.095 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-07-16 10:01:19.953 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+2022-07-16 10:01:19.983 [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.student.userService.Utils.JwtHelper.createToken(JwtHelper.java:21)
+	at com.student.userService.Controller.UserController.login(UserController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.student.userService.Filter.GlobleFilter.doFilter(GlobleFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-16 10:01:19.983 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2022-07-16 10:01:19.983 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-07-16 10:01:20.015 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-07-16 10:01:20.015 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jul 16 10:01:19 CST 2022, status=500, error=Internal Server Error, message=, path=/us (truncated)...]
+2022-07-16 10:01:20.057 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2022-07-16 10:03:30.538 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/user/login", parameters={}
+2022-07-16 10:03:30.548 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.UserController#login(User)
+2022-07-16 10:03:30.548 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [User(id=null, mobile=17605603455, userName=null, password=123456, province=null, city=null, area=nul (truncated)...]
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter] with root cause
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+	at com.student.userService.Utils.JwtHelper.createToken(JwtHelper.java:21)
+	at com.student.userService.Controller.UserController.login(UserController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.student.userService.Filter.GlobleFilter.doFilter(GlobleFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-07-16 10:03:30.558 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jul 16 10:03:30 CST 2022, status=500, error=Internal Server Error, message=, path=/us (truncated)...]
+2022-07-16 10:03:30.568 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2022-07-16 10:04:43.633 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 14736 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 10:04:43.633 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 10:04:43.713 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 10:04:44.243 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 10:04:44.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 10:04:44.273 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-07-16 10:13:54.994 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 10744 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 10:13:55.024 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 10:13:55.264 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:01:12.465 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 14040 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:01:12.505 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:01:12.605 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:03:53.073 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 2728 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:03:53.073 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:03:53.133 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:03:53.623 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 11:03:53.623 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 11:03:53.643 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-07-16 11:04:33.699 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 19804 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:04:33.699 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:04:33.769 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:04:34.299 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 11:04:34.299 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 11:04:34.319 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-07-16 11:06:30.803 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 18348 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:06:30.813 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:06:30.883 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:06:31.393 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 11:06:31.393 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 11:06:31.413 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2022-07-16 11:09:50.975 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 20620 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:09:50.975 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:09:51.055 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:09:51.605 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 11:09:51.605 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 11:12:00.732 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 19332 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:12:00.732 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:12:00.792 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:12:01.301 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-16 11:12:01.301 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-16 11:12:01.311 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2022-07-16 11:17:14.106 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 17300 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:17:14.116 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:17:14.276 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-16 11:22:41.597 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 22172 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-16 11:22:41.607 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-16 11:22:41.737 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
