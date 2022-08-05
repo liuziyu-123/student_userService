@@ -1,0 +1,29 @@
+2022-08-01 20:19:12.660 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 6796 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-01 20:19:12.737 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-01 20:19:14.034 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-01 20:19:16.483 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-01 20:19:16.483 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-01 20:19:16.896 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-01 20:19:16.908 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-01 20:19:17.061 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2022-08-01 20:19:17.742 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$94e0d28b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-01 20:19:18.669 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-08-01 20:19:18.715 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-08-01 20:19:18.716 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-01 20:19:18.716 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-01 20:19:18.718 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-08-01 20:19:18.718 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-08-01 20:19:18.718 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-08-01 20:19:18.718 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-01 20:19:18.722 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-08-01 20:19:18.895 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-01 20:19:18.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5924 ms
+2022-08-01 20:19:22.127 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-01 20:19:22.145 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-01 20:19:22.204 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2022-08-01 20:19:22.213 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-01 20:19:22.229 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-01 20:19:22.260 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-08-01 20:19:22.647 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-08-01 20:19:22.691 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-08-01 20:19:22.699 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 12.307 seconds (JVM running for 15.737)

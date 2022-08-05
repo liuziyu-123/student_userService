@@ -2,6 +2,7 @@ package com.student.userService.Filter;
 
 
 import com.alibaba.fastjson.JSONObject;
+import com.student.userService.Config.PropotiesConfiger;
 import com.student.userService.Utils.ApiResult;
 import com.student.userService.Utils.MyException;
 import com.student.userService.Utils.RedisUtil;
@@ -16,6 +17,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @WebFilter("/**")
 public class GlobleFilter implements Filter {
@@ -23,6 +25,9 @@ public class GlobleFilter implements Filter {
 
     @Autowired
     private  RedisUtil redisUtil;
+
+    @Autowired
+    private PropotiesConfiger propotiesConfiger;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -39,6 +44,7 @@ public class GlobleFilter implements Filter {
         HttpServletRequest request=(HttpServletRequest)servletRequest;
         HttpServletResponse response=(HttpServletResponse)servletResponse;
         //Filter 过滤器跨域处理
+        Map<String,String> map=propotiesConfiger.getMap();
         String origin =request.getHeader("Origin");
         response.setHeader("Access-Control-Allow-Origin", origin);
         response.setHeader("Access-Control-Allow-Methods","POST, GET, PUT, OPTIONS, DELETE, PATCH");

@@ -2,16 +2,16 @@ package com.student.userService.Service.Impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pagehelper.PageHelper;
+import com.student.userService.Dao.Region;
 import com.student.userService.Dao.User;
 import com.student.userService.Mapper.UserMapper;
 import com.student.userService.Service.IUserService;
 import com.student.userService.Utils.UUIDUtils;
 import com.student.userService.Vo.UserVo;
-import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 
@@ -26,6 +26,24 @@ public class UserServiceImpl implements IUserService {
         User user=userMapper.userLogin(mobile,password);
 
         return user;
+    }
+
+    @Override
+    public List<Region> getProvince() {
+        List<Region> regionList= userMapper.getProvince();
+        return regionList;
+    }
+
+    @Override
+    public List<Region> getCity(String provinceName) {
+        List<Region> regionList= userMapper.getCity(provinceName);
+        return regionList;
+    }
+
+    @Override
+    public List<Region> getArea(String cityName) {
+        List<Region> regionList= userMapper.getArea(cityName);
+        return regionList;
     }
 
     /**
@@ -62,11 +80,7 @@ public class UserServiceImpl implements IUserService {
             return -1;
         }
         user.setId(UUIDUtils.getGUID32());
-        try {
-            user.setAge((int)((System.currentTimeMillis()- DateUtils.parseDate(user.getBirthday(),"yyyy-MM-dd").getTime())/(24*60*60*1000)));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        user.setAge(Integer.parseInt(new SimpleDateFormat("yyyy").format(new Date()))- Integer.parseInt(user.getBirthday().substring(0,4)));
         user.setUserNo(String.valueOf(user.getId()).substring(0,6));
         user.setCreateBy(user.getUserNo());
         user.setModifyBy(user.getUserNo());

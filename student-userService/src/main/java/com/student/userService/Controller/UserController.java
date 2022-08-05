@@ -1,6 +1,7 @@
 package com.student.userService.Controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.student.userService.Dao.Region;
 import com.student.userService.Dao.User;
 import com.student.userService.Service.IUserService;
 import com.student.userService.Utils.*;
@@ -86,6 +87,56 @@ public class UserController {
         }
         int count = userService.insertTs(user);
         return ApiResult.success(count);
+    }
+
+    /**
+     * 获取全国所有的省
+     * @return
+     */
+    @GetMapping("getProvince")
+    public ApiResult getProvince(){
+        User user=LocalThread.get();
+        if(user==null){
+            return ApiResult.fail(ErrorConstant.EMPTY);
+        }
+
+        List<Region> regionList=userService.getProvince();
+        return ApiResult.success(regionList);
+    }
+
+
+
+    /**
+     * 获取某个省的所有市
+     * @param provinceName  省份名称
+     * @return
+     */
+    @GetMapping("getCity")
+    public ApiResult getCity(String provinceName){
+        User user=LocalThread.get();
+        if(user==null){
+            return ApiResult.fail(ErrorConstant.EMPTY);
+        }
+
+        List<Region> regionList=userService.getCity(provinceName);
+        return ApiResult.success(regionList);
+    }
+
+
+    /**
+     * 获取某个市的所有区
+     * @param cityId  省份Id
+     * @return
+     */
+    @GetMapping("getArea")
+    public ApiResult getArea(String cityId){
+        User user=LocalThread.get();
+        if(user==null){
+            return ApiResult.fail(ErrorConstant.EMPTY);
+        }
+
+        List<Region> regionList=userService.getArea(cityId);
+        return ApiResult.success(regionList);
     }
 
 }

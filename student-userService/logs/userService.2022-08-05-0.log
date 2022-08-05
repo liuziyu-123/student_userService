@@ -1,0 +1,171 @@
+2022-08-05 09:30:37.059 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 544 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 09:30:37.143 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 09:30:40.299 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 09:30:43.403 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 09:30:43.404 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 09:30:43.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 09:30:43.895 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 09:30:43.983 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-08-05 09:30:44.676 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$957fd0ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-05 09:30:45.738 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-08-05 09:30:45.802 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:30:45.802 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-05 09:30:45.802 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-05 09:30:45.804 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-08-05 09:30:45.804 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-08-05 09:30:45.804 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-08-05 09:30:45.804 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-05 09:30:45.900 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-08-05 09:30:46.125 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-05 09:30:46.125 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8334 ms
+2022-08-05 09:30:49.652 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:30:49.660 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-05 09:30:49.780 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2022-08-05 09:30:49.790 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-05 09:30:49.808 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-05 09:30:49.913 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-08-05 09:30:50.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:30:50.606 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-08-05 09:30:50.615 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 21.373 seconds (JVM running for 33.131)
+2022-08-05 09:33:33.864 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:33:39.143 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 12700 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 09:33:39.148 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 09:33:39.225 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 09:33:39.743 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 09:33:39.744 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 09:33:39.811 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 09:33:39.813 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 09:33:39.829 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-08-05 09:33:40.011 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$d495adb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-05 09:33:40.257 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-08-05 09:33:40.263 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:33:40.263 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-05 09:33:40.264 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-05 09:33:40.265 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-08-05 09:33:40.265 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-08-05 09:33:40.265 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-08-05 09:33:40.265 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-05 09:33:40.268 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-08-05 09:33:40.326 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-05 09:33:40.326 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1117 ms
+2022-08-05 09:33:41.673 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:33:41.681 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-05 09:33:41.720 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2022-08-05 09:33:41.730 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-05 09:33:41.752 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-05 09:33:41.765 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-08-05 09:33:41.910 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:33:41.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-08-05 09:33:41.946 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 3.549 seconds (JVM running for 4.939)
+2022-08-05 09:47:33.146 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:51:30.234 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 1740 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 09:51:30.237 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 09:51:30.287 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 09:51:30.822 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 09:51:30.822 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 09:51:30.898 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 09:51:30.900 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 09:51:30.919 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-08-05 09:51:31.161 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$76654c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-05 09:51:31.408 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-08-05 09:51:31.415 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:51:31.416 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-05 09:51:31.416 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-05 09:51:31.417 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-08-05 09:51:31.418 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-08-05 09:51:31.418 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-08-05 09:51:31.418 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-05 09:51:31.421 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-08-05 09:51:31.492 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-05 09:51:31.493 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1202 ms
+2022-08-05 09:51:32.850 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:51:32.858 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-05 09:51:32.899 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+2022-08-05 09:51:32.909 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-05 09:51:32.931 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-05 09:51:32.944 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-08-05 09:51:33.101 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-08-05 09:51:33.125 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-08-05 09:51:33.146 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 3.359 seconds (JVM running for 239.294)
+2022-08-05 09:52:17.270 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-05 09:52:54.015 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 09:52:54.533 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 1908 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 09:52:54.539 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:08:43.235 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 8544 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:08:43.237 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:11:09.115 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 5696 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:11:09.160 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:11:09.162 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:24:16.305 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 7520 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:24:16.309 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:24:16.359 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:24:16.884 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:24:16.885 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:27:13.363 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 5420 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:27:13.369 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:27:13.444 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:27:13.972 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:27:13.973 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:30:17.425 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 104 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:30:17.428 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:30:17.489 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:30:17.957 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:30:17.957 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:30:18.020 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 10:30:18.021 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 10:30:18.037 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-08-05 10:36:49.291 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 11348 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:36:49.294 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:36:49.372 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:36:49.827 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:36:49.828 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:36:49.890 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 10:36:49.892 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 10:36:49.909 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2022-08-05 10:51:35.866 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 1848 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:51:35.869 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:51:35.915 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:51:36.352 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:51:36.352 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:51:36.415 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 10:51:36.417 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 10:51:36.432 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-08-05 10:57:09.893 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 8608 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 10:57:09.895 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 10:57:09.968 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 10:57:10.420 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 10:57:10.420 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 10:57:10.481 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 10:57:10.482 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 10:57:10.497 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-08-05 11:15:14.330 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 6936 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 11:15:14.333 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 11:15:14.458 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 11:16:57.206 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 11248 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 11:16:57.209 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 11:16:57.307 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 11:16:57.766 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 11:16:57.767 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 11:16:57.838 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 11:16:57.839 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 11:16:57.854 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-08-05 11:19:38.403 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 9280 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 11:19:38.406 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 11:19:38.468 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 11:19:38.873 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 11:19:38.874 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-08-05 11:19:38.938 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-05 11:19:38.939 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-05 11:19:38.955 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-08-05 11:19:39.110 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$6e7e0d1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-05 16:06:32.081 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 14708 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 16:06:32.133 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 16:06:32.231 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 16:24:13.249 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 15476 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 16:24:13.252 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 16:24:13.306 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 16:25:27.850 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 16024 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-08-05 16:25:27.854 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-08-05 16:25:28.010 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-08-05 16:25:28.473 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-08-05 16:25:28.473 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'

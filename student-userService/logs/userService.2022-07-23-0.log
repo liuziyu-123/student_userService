@@ -1,0 +1,119 @@
+2022-07-23 16:06:51.174 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 26164 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:06:51.183 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:06:51.813 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:06:54.043 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-23 16:06:54.054 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-23 16:06:54.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-07-23 16:06:54.713 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$16c1faaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-23 16:06:55.833 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-07-23 16:06:55.893 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-23 16:06:55.893 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-23 16:06:55.993 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-07-23 16:06:56.274 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-23 16:06:56.274 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4991 ms
+2022-07-23 16:06:59.183 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-23 16:06:59.194 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-23 16:06:59.304 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2022-07-23 16:06:59.322 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-23 16:06:59.343 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-23 16:06:59.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:06:59.983 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-23 16:07:00.003 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 12.756 seconds (JVM running for 28.562)
+2022-07-23 16:09:18.992 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 7384 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:09:19.011 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:09:19.356 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:09:20.620 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-23 16:09:20.622 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-23 16:09:20.648 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-07-23 16:09:20.795 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$88b45b7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-23 16:09:21.499 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-07-23 16:09:21.524 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:09:21.524 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-23 16:09:21.524 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-23 16:09:21.526 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-07-23 16:09:21.526 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-07-23 16:09:21.526 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-23 16:09:21.526 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-23 16:09:21.536 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-07-23 16:09:21.691 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-23 16:09:21.692 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2492 ms
+2022-07-23 16:09:25.245 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-23 16:09:25.263 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-23 16:09:25.399 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2022-07-23 16:09:25.408 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-23 16:09:25.448 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-23 16:09:25.919 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:09:25.963 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-23 16:09:25.986 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 7.687 seconds (JVM running for 9.561)
+2022-07-23 16:14:13.797 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 19696 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:14:13.801 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:14:14.051 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:14:15.189 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-23 16:14:15.191 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-23 16:14:15.209 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-07-23 16:14:15.402 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$ddc7bc4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-23 16:14:16.107 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-07-23 16:14:16.151 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:14:16.152 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-23 16:14:16.152 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-23 16:14:16.153 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2022-07-23 16:14:16.154 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2022-07-23 16:14:16.154 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-23 16:14:16.154 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-23 16:14:16.175 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2022-07-23 16:14:16.320 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-23 16:14:16.321 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2390 ms
+2022-07-23 16:14:17.972 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-23 16:14:17.982 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-23 16:14:18.033 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2022-07-23 16:14:18.043 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-23 16:14:18.068 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-23 16:14:18.229 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-07-23 16:14:18.257 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-23 16:14:18.268 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 5.399 seconds (JVM running for 10.75)
+2022-07-23 16:22:24.782 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-23 16:22:24.782 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-23 16:22:24.782 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-07-23 16:22:24.842 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-23 16:22:24.842 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 60 ms
+2022-07-23 16:22:24.933 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/user/login", parameters={}
+2022-07-23 16:22:24.984 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.UserController#login(User)
+2022-07-23 16:22:25.692 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [User(id=null, mobile=17605603455, userName=null, password=123456, province=null, city=null, area=nul (truncated)...]
+2022-07-23 16:22:26.002 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-07-23 16:22:32.092 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-07-23 16:22:37.152 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-07-23 16:22:37.152 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@7b268a4e]
+2022-07-23 16:22:37.328 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-07-23 16:22:44.055 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/user/tsInfo?page=1&pageSize=10&tsVoData=%7B%22identity%22:%22%22,%22province%22:%22%E5%AE%89%E5%BE%BD%E7%9C%81%22,%22city%22:%22%E5%90%88%E8%82%A5%E5%B8%82%22,%22area%22:%22%E8%9C%80%E5%B1%B1%E5%8C%BA%22,%22userName%22:%22%22,%22userNo%22:%22%22%7D", parameters={masked}
+2022-07-23 16:22:44.056 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.UserController#getTsInfo(int, int, String)
+2022-07-23 16:29:16.089 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 10768 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:29:16.093 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:29:16.384 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:30:56.408 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 1140 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:30:56.457 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:30:56.872 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:39:41.782 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 17256 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:39:41.785 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:39:41.842 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:39:42.319 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-23 16:39:42.321 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-23 16:39:42.337 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2022-07-23 16:49:46.509 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 23724 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:49:46.526 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:49:46.567 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 16:53:12.065 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 22264 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 16:53:12.067 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 16:53:12.127 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 17:01:50.704 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 14960 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 17:01:50.706 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 17:01:50.769 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-23 17:01:51.379 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-07-23 17:01:51.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-07-23 17:03:52.991 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 25900 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-07-23 17:03:52.995 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-07-23 17:03:53.063 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

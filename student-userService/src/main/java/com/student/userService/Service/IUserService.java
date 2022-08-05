@@ -1,6 +1,7 @@
 package com.student.userService.Service;
 
 
+import com.student.userService.Dao.Region;
 import com.student.userService.Dao.User;
 import com.student.userService.Vo.UserVo;
 
@@ -25,5 +26,30 @@ public interface IUserService {
      */
     int insertTs(User user);
 
+    /**
+     * 用户登录
+     * @param mobile  手机号码
+     * @param password  密码
+     * @return
+     */
     User userLogin(String mobile, String password);
+
+    /**
+     * 获取所有的省份
+     * @return
+     */
+    List<Region> getProvince();
+
+    /**
+     * 获取某个省的所有市
+     * @return
+     */
+    List<Region> getCity(String provinceId);
+
+
+    /**
+     * 获取某个市的所有区
+     * @return
+     */
+    List<Region> getArea(String cityId);
 }

@@ -23,24 +23,41 @@
         where
         1=1
         <if test="userName !=null and userName != ''">
-            and  user_name=userName
+            and  user_name=#{userName}
         </if>
         <if test="userNo !=null and userNo != ''">
-            and  user_no=userNo
+            and  user_no=#{userNo}
         </if>
         <if test="identity !=null and identity != ''">
-            and  identity=identity
+            and  identity=#{identity}
         </if>
         <if test="province !=null and province != ''">
-            and  province=province
+            and  province=#{province}
         </if>
         <if test="city !=null and city != ''">
-            and  city=city
+            and  city=#{city}
         </if>
         <if test="area !=null and area != ''">
-            and  area=area
+            and  area=#{area}
         </if>
 
+    </select>
+
+    <select id="getProvince" resultType="com.student.userService.Dao.Region">
+        select * from region
+        where level_id=1
+    </select>
+
+    <select id="getCity" resultType="com.student.userService.Dao.Region">
+         select s.* from region s
+         left join region t on t.id=s.parent_id
+        where t.name=#{provinceName}
+    </select>
+
+    <select id="getArea" resultType="com.student.userService.Dao.Region">
+         select s.* from region s
+         left join region t on t.id=s.parent_id
+        where t.name=#{cityName}
     </select>
 
 
