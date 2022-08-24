@@ -1,8 +1,13 @@
 package com.student.userService.Utils;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import lombok.Data;
+
 import java.util.List;
 
-public class PageResult {
+@Data
+public class PagingResult<T> {
 
     /**
      * 当前页
@@ -26,4 +31,22 @@ public class PageResult {
      * 返回集合
      */
     public List<T> list;
+
+    public PagingResult() {
+
+    }
+
+    public PagingResult(List<T> list) {
+        PageInfo<T> ePageInfo = new PageInfo(list);
+        this.curPage = ePageInfo.getPageNum();
+        this.pageSize = ePageInfo.getPageSize();
+        this.totalCount = (int) ePageInfo.getTotal();
+        this.totalPages = ePageInfo.getPages();
+        this.list = ePageInfo.getList();
+
+        //清除上下文
+        PageHelper.clearPage();
+    }
+
+
 }

@@ -1,4 +1,4 @@
-package com.student.userService.Controller.ts;
+package com.student.userService.Controller.Ts;
 
 import com.student.userService.Service.TsService;
 import com.student.userService.Utils.ApiResult;

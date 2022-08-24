@@ -83,7 +83,7 @@ public class UserController {
     @PostMapping("insertTs")
     public ApiResult insertTs(@RequestBody User user){
         if(user==null){
-            return ApiResult.fail(ErrorConstant.EMPTY);
+            return ApiResult.fail(ErrorConstant.NO_GET_LOGIN);
         }
         int count = userService.insertTs(user);
         return ApiResult.success(count);
@@ -97,7 +97,7 @@ public class UserController {
     public ApiResult getProvince(){
         User user=LocalThread.get();
         if(user==null){
-            return ApiResult.fail(ErrorConstant.EMPTY);
+            return ApiResult.fail(ErrorConstant.NO_GET_LOGIN);
         }
 
         List<Region> regionList=userService.getProvince();
@@ -115,7 +115,7 @@ public class UserController {
     public ApiResult getCity(String provinceName){
         User user=LocalThread.get();
         if(user==null){
-            return ApiResult.fail(ErrorConstant.EMPTY);
+            return ApiResult.fail(ErrorConstant.NO_GET_LOGIN);
         }
 
         List<Region> regionList=userService.getCity(provinceName);

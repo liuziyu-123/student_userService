@@ -31,10 +31,11 @@ public class GlobelInterceptor implements HandlerInterceptor {
             if (StringUtils.isNotEmpty(userJson)) {
                 String userName= JwtHelper.getUserName(userJson);
                 String userId=JwtHelper.getUserId(userJson);
-
+                String userNo=JwtHelper.getUserNo(userJson);
                 User userInfo =new User();
                 userInfo.setId(userId);
                 userInfo.setUserName(userName);
+                userInfo.setUserNo(userNo);
                 LocalThread.set(userInfo);
             }
             return Boolean.TRUE;

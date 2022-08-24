@@ -26,9 +26,6 @@ public class GlobleFilter implements Filter {
     @Autowired
     private  RedisUtil redisUtil;
 
-    @Autowired
-    private PropotiesConfiger propotiesConfiger;
-
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         System.out.println("过滤器执行了。。。。。。");
@@ -44,7 +41,7 @@ public class GlobleFilter implements Filter {
         HttpServletRequest request=(HttpServletRequest)servletRequest;
         HttpServletResponse response=(HttpServletResponse)servletResponse;
         //Filter 过滤器跨域处理
-        Map<String,String> map=propotiesConfiger.getMap();
+       // Map<String,String> map=propotiesConfiger.getMap();
         String origin =request.getHeader("Origin");
         response.setHeader("Access-Control-Allow-Origin", origin);
         response.setHeader("Access-Control-Allow-Methods","POST, GET, PUT, OPTIONS, DELETE, PATCH");
