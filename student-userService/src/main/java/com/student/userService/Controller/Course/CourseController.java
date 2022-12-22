@@ -1,8 +1,8 @@
 package com.student.userService.Controller.Course;
 
 import com.github.pagehelper.PageHelper;
-import com.student.userService.Dao.Course;
-import com.student.userService.Dao.User;
+import com.student.userService.Domain.Entry.CourseEntry;
+import com.student.userService.Domain.Entry.UserEntry;
 import com.student.userService.Service.CourseService;
 import com.student.userService.Utils.ApiResult;
 import com.student.userService.Utils.ErrorConstant;
@@ -20,33 +20,40 @@ public class CourseController {
 
     /**
      * 通过课程名称模糊查询
+     *
      * @param courseName
      * @return
      */
     @GetMapping("getCourse")
-    public ApiResult getCourse(@RequestParam(required = false,defaultValue = "1") int page,
-                               @RequestParam(required = false,defaultValue = "10") int pageSize,
-                               @RequestParam(required = false)String courseName){
+    public ApiResult getCourse(@RequestParam(required = false, defaultValue = "1") int page,
+                               @RequestParam(required = false, defaultValue = "10") int pageSize,
+                               @RequestParam(required = false) String courseName) {
 
 
-        if(pageSize>0){
-            PageHelper.startPage(page,pageSize);
+        if (pageSize > 0) {
+            PageHelper.startPage(page, pageSize);
         }
-        List<Course> courseList=courseService.getCourse(courseName);
+        List<CourseEntry> courseList = courseService.getCourse(courseName);
         return ApiResult.success(courseList);
     }
 
+    /**
+     * @return
+     * @descriptions:新增课程
+     * @author:刘梓毓
+     * @Time:${DATE}
+     */
     @PostMapping("insertCourse")
-    public ApiResult insertCourse(@RequestBody Course course){
-        User user= LocalThread.get();
-        if(user==null){
+    public ApiResult insertCourse(@RequestBody CourseEntry courseEntry) {
+        UserEntry user = LocalThread.get();
+        if (user == null) {
             return ApiResult.fail(ErrorConstant.NO_GET_LOGIN);
         }
-        if(course==null){
+        if (courseEntry == null) {
             return ApiResult.fail(ErrorConstant.EMPTY);
         }
-        course.setCreateBy(user.getUserNo());
-        courseService.insertCourse(course);
+        courseEntry.setCreateBy(user.getUserNo());
+        courseService.insertCourse(courseEntry);
         return null;
     }
 }

@@ -91,6 +91,7 @@ public class ApiResult<T> {
 
     /**
      * 返回一个标准成功的JSON结果
+     *
      * @author ljchengx
      * @date 2021/5/8 14:32
      */
@@ -129,7 +130,6 @@ public class ApiResult<T> {
     public static <T> ApiResult<T> error(String msg) {
         return new ApiResult<>(msg, ErrorConstant.ERROR);
     }
-
 
 
 }

@@ -1,0 +1,95 @@
+2022-11-18 22:42:05.595 [main] INFO  com.student.userService.UserApplication - Starting UserApplication on DESKTOP-DQS4SD0 with PID 992 (D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes started by liuziyu in D:\Projects\StudentProject\student_Backend\student_userService\student-userService)
+2022-11-18 22:42:05.615 [main] INFO  com.student.userService.UserApplication - No active profile set, falling back to default profiles: default
+2022-11-18 22:42:05.975 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-11-18 22:42:07.212 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-11-18 22:42:07.212 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService.Config'
+2022-11-18 22:42:07.212 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Using auto-configuration base package 'com.student.userService'
+2022-11-18 22:42:07.295 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-18 22:42:07.295 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-18 22:42:07.345 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2022-11-18 22:42:07.674 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.student.userService.Config.RedisConfig$$EnhancerBySpringCGLIB$$33c5cd45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-18 22:42:08.451 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022-11-18 22:42:08.481 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2022-11-18 22:42:08.481 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-18 22:42:08.481 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-18 22:42:08.713 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-18 22:42:08.713 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2878 ms
+2022-11-18 22:42:09.588 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\ClassMapper.xml]'
+2022-11-18 22:42:09.622 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\CourseMapper.xml]'
+2022-11-18 22:42:09.640 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\GradeMapper.xml]'
+2022-11-18 22:42:09.670 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\SubjectMapper.xml]'
+2022-11-18 22:42:09.710 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\TsMapper.xml]'
+2022-11-18 22:42:09.759 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Parsed mapper file: 'file [D:\Projects\StudentProject\student_Backend\student_userService\student-userService\target\classes\mapper\UserMapper.xml]'
+2022-11-18 22:42:10.401 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-18 22:42:10.401 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-18 22:42:10.501 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 30 mappings in 'requestMappingHandlerMapping'
+2022-11-18 22:42:10.511 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-18 22:42:10.561 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-18 22:42:10.571 [main] DEBUG c.b.m.autoconfigure.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-11-18 22:42:10.731 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2022-11-18 22:42:10.772 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-18 22:42:10.782 [main] INFO  com.student.userService.UserApplication - Started UserApplication in 6.307 seconds (JVM running for 9.66)
+2022-11-18 22:42:44.587 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 22:42:44.588 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-18 22:42:44.588 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-11-18 22:42:44.629 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-18 22:42:44.630 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 42 ms
+2022-11-18 22:42:44.656 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/user/login", parameters={}
+2022-11-18 22:42:44.692 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.UserController#login(User)
+2022-11-18 22:42:45.168 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [User(id=null, mobile=17605603455, userName=null, password=123456, provinceName=null, cityName=null,  (truncated)...]
+2022-11-18 22:42:45.368 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-11-18 22:42:48.718 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-11-18 22:42:48.748 [http-nio-8081-exec-1] DEBUG c.student.userService.Mapper.UserMapper.userLogin - ==>  Preparing: select * from user where mobile=? and password=?
+2022-11-18 22:42:48.818 [http-nio-8081-exec-1] DEBUG c.student.userService.Mapper.UserMapper.userLogin - ==> Parameters: 17605603455(String), 123456(String)
+2022-11-18 22:42:49.628 [http-nio-8081-exec-1] DEBUG c.student.userService.Mapper.UserMapper.userLogin - <==      Total: 1
+2022-11-18 22:42:52.322 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:42:52.322 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@56afae3d]
+2022-11-18 22:42:52.421 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-11-18 22:43:01.619 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/class/selectGrade?gradeName=&gradeDirectorId=&pageIndex=1&pageSize=10", parameters={masked}
+2022-11-18 22:43:01.619 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/ts/getTeacherInfo", parameters={}
+2022-11-18 22:43:01.620 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Ts.TsController#getTeacherInfo()
+2022-11-18 22:43:01.620 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Class.ClassController#selectGrade(String, String, int, int)
+2022-11-18 22:43:03.127 [http-nio-8081-exec-3] DEBUG com.student.userService.Mapper.TsMapper.selectList - ==>  Preparing: SELECT id,mobile,user_name,password,province_name,city_name,area_name,age,sex,identity,user_no,birthday,create_time,create_by,modify_by,modify_time,is_head FROM user WHERE (identity = ? AND is_head = ?)
+2022-11-18 22:43:03.127 [http-nio-8081-exec-3] DEBUG com.student.userService.Mapper.TsMapper.selectList - ==> Parameters: 0(Integer), 0(Integer)
+2022-11-18 22:43:03.294 [http-nio-8081-exec-3] DEBUG com.student.userService.Mapper.TsMapper.selectList - <==      Total: 2
+2022-11-18 22:43:03.296 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:43:03.296 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@2aced6ce]
+2022-11-18 22:43:03.354 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-11-18 22:43:03.809 [http-nio-8081-exec-2] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - ==>  Preparing: SELECT count(0) FROM Grade WHERE 1 = 1
+2022-11-18 22:43:03.809 [http-nio-8081-exec-2] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - ==> Parameters: 
+2022-11-18 22:43:05.790 [http-nio-8081-exec-2] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - <==      Total: 1
+2022-11-18 22:43:05.790 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:43:05.790 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@60ba0e58]
+2022-11-18 22:43:05.800 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-11-18 22:43:18.656 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/ts/tsInfo", parameters={}
+2022-11-18 22:43:18.656 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/ts/getProvince", parameters={}
+2022-11-18 22:43:18.657 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Ts.TsController#getTsInfo(UserVo)
+2022-11-18 22:43:18.657 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Ts.TsController#getProvince()
+2022-11-18 22:43:18.659 [http-nio-8081-exec-4] DEBUG c.student.userService.Mapper.TsMapper.getProvince - ==>  Preparing: select * from region where level_id=1
+2022-11-18 22:43:18.660 [http-nio-8081-exec-4] DEBUG c.student.userService.Mapper.TsMapper.getProvince - ==> Parameters: 
+2022-11-18 22:43:18.662 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [UserVo(page=1, pageSize=10, userName=, userNo=, identity=null, provinceName=, cityName=null, areaNam (truncated)...]
+2022-11-18 22:43:18.665 [http-nio-8081-exec-5] DEBUG c.s.userService.Mapper.TsMapper.getUserList_COUNT - ==>  Preparing: SELECT count(0) FROM user WHERE 1 = 1
+2022-11-18 22:43:18.665 [http-nio-8081-exec-5] DEBUG c.s.userService.Mapper.TsMapper.getUserList_COUNT - ==> Parameters: 
+2022-11-18 22:43:18.870 [http-nio-8081-exec-5] DEBUG c.s.userService.Mapper.TsMapper.getUserList_COUNT - <==      Total: 1
+2022-11-18 22:43:18.870 [http-nio-8081-exec-5] DEBUG c.student.userService.Mapper.TsMapper.getUserList - ==>  Preparing: select * from user where 1=1 LIMIT ?
+2022-11-18 22:43:18.870 [http-nio-8081-exec-5] DEBUG c.student.userService.Mapper.TsMapper.getUserList - ==> Parameters: 10(Integer)
+2022-11-18 22:43:19.020 [http-nio-8081-exec-5] DEBUG c.student.userService.Mapper.TsMapper.getUserList - <==      Total: 3
+2022-11-18 22:43:19.020 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:43:19.020 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@15a97795]
+2022-11-18 22:43:19.030 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-11-18 22:43:19.291 [http-nio-8081-exec-4] DEBUG c.student.userService.Mapper.TsMapper.getProvince - <==      Total: 34
+2022-11-18 22:43:19.291 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:43:19.291 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@6928a3e8]
+2022-11-18 22:43:19.291 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-11-18 22:43:27.436 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/ts/getTeacherInfo", parameters={}
+2022-11-18 22:43:27.436 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/class/selectGrade?gradeName=&gradeDirectorId=&pageIndex=1&pageSize=10", parameters={masked}
+2022-11-18 22:43:27.436 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Class.ClassController#selectGrade(String, String, int, int)
+2022-11-18 22:43:27.436 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.userService.Controller.Ts.TsController#getTeacherInfo()
+2022-11-18 22:43:27.441 [http-nio-8081-exec-6] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - ==>  Preparing: SELECT count(0) FROM Grade WHERE 1 = 1
+2022-11-18 22:43:27.441 [http-nio-8081-exec-7] DEBUG com.student.userService.Mapper.TsMapper.selectList - ==>  Preparing: SELECT id,mobile,user_name,password,province_name,city_name,area_name,age,sex,identity,user_no,birthday,create_time,create_by,modify_by,modify_time,is_head FROM user WHERE (identity = ? AND is_head = ?)
+2022-11-18 22:43:27.441 [http-nio-8081-exec-6] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - ==> Parameters: 
+2022-11-18 22:43:27.441 [http-nio-8081-exec-7] DEBUG com.student.userService.Mapper.TsMapper.selectList - ==> Parameters: 0(Integer), 0(Integer)
+2022-11-18 22:43:27.443 [http-nio-8081-exec-6] DEBUG c.s.u.Mapper.GradeMapper.selectGrade_COUNT - <==      Total: 1
+2022-11-18 22:43:27.443 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-18 22:43:27.443 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.student.userService.Utils.ApiResult@306714f8]
+2022-11-18 22:43:27.444 [http-nio-8081-exec-7] DEBUG com.student.userService.Mapper.TsMapper.selectList - <==      Total: 2

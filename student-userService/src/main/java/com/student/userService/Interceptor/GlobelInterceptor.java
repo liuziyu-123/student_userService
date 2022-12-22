@@ -1,6 +1,6 @@
 package com.student.userService.Interceptor;
 
-import com.student.userService.Dao.User;
+import com.student.userService.Domain.Entry.UserEntry;
 import com.student.userService.Utils.JwtHelper;
 import com.student.userService.Utils.LocalThread;
 import lombok.extern.slf4j.Slf4j;
@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -29,14 +30,15 @@ public class GlobelInterceptor implements HandlerInterceptor {
             String userJson = request.getHeader("token");
 
             if (StringUtils.isNotEmpty(userJson)) {
-                String userName= JwtHelper.getUserName(userJson);
-                String userId=JwtHelper.getUserId(userJson);
-                String userNo=JwtHelper.getUserNo(userJson);
-                User userInfo =new User();
+                String userName = JwtHelper.getUserName(userJson);
+                String userId = JwtHelper.getUserId(userJson);
+                String userNo = JwtHelper.getUserNo(userJson);
+                UserEntry userInfo = new UserEntry();
                 userInfo.setId(userId);
                 userInfo.setUserName(userName);
                 userInfo.setUserNo(userNo);
                 LocalThread.set(userInfo);
+                System.out.println(LocalThread.get());
             }
             return Boolean.TRUE;
         } catch (Exception e) {

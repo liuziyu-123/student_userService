@@ -1,14 +1,13 @@
 package com.student.userService.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.student.userService.Dao.Course;
+import com.student.userService.Domain.Entry.CourseEntry;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
 @Mapper
-public interface CourseMapper extends BaseMapper<Course> {
+public interface CourseMapper extends BaseMapper<CourseEntry> {
 
-    List<Course> selectCourseByName(String courseName);
+    List<CourseEntry> selectCourseByName(String courseName);
 }

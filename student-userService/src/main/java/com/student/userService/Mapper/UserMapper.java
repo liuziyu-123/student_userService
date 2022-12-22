@@ -2,27 +2,15 @@ package com.student.userService.Mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.student.userService.Dao.Region;
-import com.student.userService.Dao.User;
-import com.student.userService.Vo.UserVo;
+import com.student.userService.Domain.Entry.UserEntry;
 import org.apache.ibatis.annotations.Mapper;
 
-import java.util.List;
-
 @Mapper
-public interface UserMapper extends BaseMapper<User> {
+public interface UserMapper extends BaseMapper<UserEntry> {
 
-    User userLogin(String mobile ,String password);
+    UserEntry userLogin(String mobile, String password);
 
-    int insertTs(User user);
+    String getUserName(String userId);
 
-    List<User> getUserList(UserVo userVo);
-
-    List<Region> getProvince();
-
-    List<Region> getCity(String provinceName);
-
-
-    List<Region> getArea(String cityName);
 
 }

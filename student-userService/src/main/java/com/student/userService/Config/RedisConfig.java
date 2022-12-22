@@ -15,6 +15,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * redis配置类
+ *
  * @program: springbootdemo
  * @Date: 2019/1/25 15:20
  * @Author: Mr.Zheng
@@ -26,6 +27,7 @@ public class RedisConfig extends CachingConfigurerSupport {
 
     /**
      * retemplate相关配置
+     *
      * @param factory
      * @return
      */

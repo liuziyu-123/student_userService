@@ -1,19 +1,19 @@
 package com.student.userService.Utils;
 
 
-import com.student.userService.Dao.User;
+import com.student.userService.Domain.Entry.UserEntry;
 
 public class LocalThread {
-    private static final ThreadLocal<User> LOCAL = new ThreadLocal<>();
+    private static final ThreadLocal<UserEntry> LOCAL = new ThreadLocal<>();
 
     private LocalThread() {
     }
 
-    public static void set(User user) {
+    public static void set(UserEntry user) {
         LOCAL.set(user);
     }
 
-    public static User get() {
+    public static UserEntry get() {
         return LOCAL.get();
     }
 

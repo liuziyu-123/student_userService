@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FilterConfig {
     @Bean
-    public FilterRegistrationBean GlobelFilter(){
+    public FilterRegistrationBean GlobelFilter() {
         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         registrationBean.setFilter(new GlobleFilter());
         registrationBean.addUrlPatterns("/*");
-        
+
         registrationBean.setName("globle");
         registrationBean.setOrder(2);
         return registrationBean;

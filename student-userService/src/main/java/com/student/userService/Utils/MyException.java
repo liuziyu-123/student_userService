@@ -3,14 +3,15 @@ package com.student.userService.Utils;
 public class MyException extends RuntimeException {
     private String msg;
     private int code = 300;
+
     /**
      * 空参构造
      */
     public MyException() {
         super();
     }
+
     /**
-     *
      * @param msg 表示异常提示
      */
     public MyException(String msg) {

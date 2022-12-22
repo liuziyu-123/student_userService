@@ -13,5 +13,5 @@ import java.util.Map;
 @Data
 @EnableAutoConfiguration
 public class PropotiesConfiger {
-    private Map<String,String> map;
+    private Map<String, String> map;
 }

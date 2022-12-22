@@ -37,9 +37,9 @@ public class UUIDUtils {
         StringBuffer shortBuffer = new StringBuffer();
         String uuid = UUID.randomUUID().toString().replace("-", "");
         for (int i = 0; i < digit; i++) {
-                String str = uuid.substring(i * 4, i * 4 + 4);
-                int x = Integer.parseInt(str, 16);
-                shortBuffer.append(chars[x % 0x3E]);
+            String str = uuid.substring(i * 4, i * 4 + 4);
+            int x = Integer.parseInt(str, 16);
+            shortBuffer.append(chars[x % 0x3E]);
         }
         return shortBuffer.toString();
 

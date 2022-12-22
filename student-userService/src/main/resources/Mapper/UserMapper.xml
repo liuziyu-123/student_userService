@@ -2,64 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.student.userService.Mapper.UserMapper">
 
-    <select id="userLogin" resultType="com.student.userService.Dao.User">
+    <select id="userLogin" resultType="com.student.userService.Domain.Entry.UserEntry">
         select * from user
         where mobile=#{mobile} and password=#{password}
     </select>
 
-    <insert id="insertTs" parameterType="com.student.userService.Dao.User">
-        insert into user(
-        id,user_name,mobile,sex,user_no,identity,age,birthday,password,
-        province,city,area,create_by,modify_by) values
-        (#{id}, #{userName}, #{mobile}, #{sex}, #{userNo},
-        #{identity}, #{age}, #{birthday,jdbcType=DATE},
-        #{password}, #{province}, #{city}, #{area},
-         #{createBy},#{modifyBy})
-    </insert>
-
-    <select id="getUserList" parameterType="com.student.userService.Vo.UserVo" resultType="com.student.userService.Dao.User">
-        select *
+    <select id="getUserName" resultType="java.lang.String">
+        select user_name
         from user
-        where
-        1=1
-        <if test="userName !=null and userName != ''">
-            and  user_name=#{userName}
-        </if>
-        <if test="userNo !=null and userNo != ''">
-            and  user_no=#{userNo}
-        </if>
-        <if test="identity !=null and identity != ''">
-            and  identity=#{identity}
-        </if>
-        <if test="province !=null and province != ''">
-            and  province=#{province}
-        </if>
-        <if test="city !=null and city != ''">
-            and  city=#{city}
-        </if>
-        <if test="area !=null and area != ''">
-            and  area=#{area}
-        </if>
-
+        where id =#{userId}
     </select>
-
-    <select id="getProvince" resultType="com.student.userService.Dao.Region">
-        select * from region
-        where level_id=1
-    </select>
-
-    <select id="getCity" resultType="com.student.userService.Dao.Region">
-         select s.* from region s
-         left join region t on t.id=s.parent_id
-        where t.name=#{provinceName}
-    </select>
-
-    <select id="getArea" resultType="com.student.userService.Dao.Region">
-         select s.* from region s
-         left join region t on t.id=s.parent_id
-        where t.name=#{cityName}
-    </select>
-
 
 
 </mapper>

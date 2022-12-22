@@ -102,7 +102,7 @@ public class ErrorConstant {
         ERRORS.put(No_PERMISSION, "您没有权限操作");
 
 
-        ERRORS.put(BUSINESSERROR,"业务异常");
+        ERRORS.put(BUSINESSERROR, "业务异常");
         ERRORS.put(NOTFOUND, "资源不存在");
         ERRORS.put(METHODNOTALLOWED, "请重新尝试");
         ERRORS.put(UNSUPPORTEDMEDIATYPE, "不支持的文件类型");
