@@ -1,6 +1,7 @@
 package com.student.userService.Service;
 
 
+import com.student.userService.Domain.Dao.ClassDao;
 import com.student.userService.Domain.Dao.GradeDao;
 import com.student.userService.Domain.Entry.ClasEntry;
 import com.student.userService.Domain.Entry.GradeEntry;
@@ -26,6 +27,8 @@ public interface ClassService {
     int deleteClass(String classId);
 
     int updateStatus(String classId, int status);
+
+    List<ClassDao> getClassByGradeId(String gradeId);
 
 
 }

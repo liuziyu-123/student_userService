@@ -1,6 +1,7 @@
 package com.student.userService.Controller.Class;
 
 import com.github.pagehelper.PageHelper;
+import com.student.userService.Domain.Dao.ClassDao;
 import com.student.userService.Domain.Dao.GradeDao;
 import com.student.userService.Domain.Entry.ClasEntry;
 import com.student.userService.Domain.Entry.GradeEntry;
@@ -63,11 +64,6 @@ public class ClassController {
     @PostMapping("updateHeadTeacher")
     public ApiResult updateHeadTeacher(String classId, String headTeacher) {
 
-
-        UserEntry user = LocalThread.get();
-        if (user == null) {
-            return ApiResult.fail(ErrorConstant.NO_GET_LOGIN);
-        }
         if (StringUtils.isAnyBlank(classId, headTeacher)) {
             return ApiResult.fail(ErrorConstant.EMPTY, "参数不能为空");
         }
@@ -129,6 +125,26 @@ public class ClassController {
         int count = classService.updateStatus(classId, status);
         return ApiResult.success(count);
     }
+
+
+    /**
+     * 获取该年级的班级
+     *
+     * @param gradeId 年级Id
+     * @return
+     */
+    @GetMapping("getClassByGradeId")
+    public ApiResult getClassByGradeId(@RequestParam String gradeId) {
+
+        if (StringUtils.isBlank(gradeId)) {
+            return ApiResult.fail(ErrorConstant.EMPTY, "参数不能为空");
+        }
+        List<ClassDao> classDaoList = classService.getClassByGradeId(gradeId);
+        return ApiResult.success(classDaoList);
+    }
+
+
+
 
 
 }

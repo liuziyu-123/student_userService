@@ -53,7 +53,7 @@ public class CourseController {
             return ApiResult.fail(ErrorConstant.EMPTY);
         }
         courseEntry.setCreateBy(user.getUserNo());
-        courseService.insertCourse(courseEntry);
-        return null;
+
+        return  ApiResult.success(courseService.insertCourse(courseEntry));
     }
 }

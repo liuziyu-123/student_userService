@@ -27,6 +27,10 @@ public class FileController {
     @Value("${files.upload.path}")
     private String fileUploadPath;
 
+
+    @Value("${files.download.path}")
+    private String fileDownloadPath;
+
     /**
      * 文件上传接口
      *
@@ -54,7 +58,7 @@ public class FileController {
         File uploadFile = new File(fileUploadPath + fileUUID);
         //文件路径与下载接口路径一样
         request.getServletContext();
-        String url = "http://localhost:8081/file/" + fileUUID;
+        String url = fileDownloadPath + fileUUID;
         //把获取到的文件存储到磁盘目录
         file.transferTo(uploadFile);
 

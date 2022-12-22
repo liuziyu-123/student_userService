@@ -2,6 +2,7 @@ package com.student.userService.Service.Impl;
 
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.student.userService.Domain.Dao.ClassDao;
 import com.student.userService.Domain.Dao.GradeDao;
 import com.student.userService.Domain.Entry.ClasEntry;
 import com.student.userService.Domain.Entry.GradeEntry;
@@ -77,6 +78,13 @@ public class ClassServiceImpl implements ClassService {
         return classMapper.update(null, Wrappers.<ClasEntry>lambdaUpdate()
                 .set(ClasEntry::getIsForbidden, status)
                 .eq(ClasEntry::getId, classId));
+    }
+
+    @Override
+    public List<ClassDao> getClassByGradeId(String gradeId) {
+        List<ClassDao> classDaoList= classMapper.getClassByGradeId(gradeId);
+
+        return classDaoList;
     }
 
 

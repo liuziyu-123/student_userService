@@ -14,4 +14,11 @@
         </if>
     </select>
 
+    <select id="getClassByGradeId" resultType="com.student.userService.Domain.Dao.ClassDao">
+        select id,class_name,class_no
+        from clas
+        where grade_id=#{gradeId}
+        order by class_no asc
+    </select>
+
 </mapper>
