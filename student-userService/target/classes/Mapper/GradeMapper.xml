@@ -3,14 +3,15 @@
 <mapper namespace="com.student.userService.Mapper.GradeMapper">
 
     <select id="selectGrade" resultType="com.student.userService.Domain.Dao.GradeDao">
-        select * from Grade
+        select id,grade_name,create_time,create_by,grade_director_id from Grade
         where 1=1
         <if test="gradeName !=null and gradeName !=''">
             and grade_name like %#{className}%
         </if>
         <if test=" gradeDirectorId!=null and gradeDirectorId !=''">
-            and grade_ director_id =#{gradeDirectorId}
+            and grade_director_id =#{gradeDirectorId}
         </if>
+        order by grade_name asc
     </select>
 
 

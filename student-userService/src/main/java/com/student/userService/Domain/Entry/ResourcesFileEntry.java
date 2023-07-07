@@ -18,9 +18,5 @@ public class ResourcesFileEntry {
 
     private String mediaId;
 
-    private String type;
-
-    private String createBy;
-
-    private Date createTime;
+    private int type;
 }

@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "white",
+      "type": "com.student.userService.Config.PropotiesConfiger",
+      "sourceType": "com.student.userService.Config.PropotiesConfiger"
+    }
+  ],
+  "properties": [
+    {
+      "name": "white.list",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.student.userService.Config.PropotiesConfiger"
+    }
+  ],
+  "hints": []
+}

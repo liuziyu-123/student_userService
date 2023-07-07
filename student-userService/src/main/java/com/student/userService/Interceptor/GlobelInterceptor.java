@@ -1,16 +1,21 @@
 package com.student.userService.Interceptor;
 
+import com.student.userService.Config.PropotiesConfiger;
 import com.student.userService.Domain.Entry.UserEntry;
 import com.student.userService.Utils.JwtHelper;
 import com.student.userService.Utils.LocalThread;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 /**
  * 拦截器
@@ -19,6 +24,11 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class GlobelInterceptor implements HandlerInterceptor {
 
+    @Autowired
+    private PropotiesConfiger propotiesConfiger;
+//
+    @Autowired
+    private Environment environment;
 
     /**
      * 在请求处理之前进行调用（Controller方法调用之前）
@@ -28,7 +38,8 @@ public class GlobelInterceptor implements HandlerInterceptor {
         try {
             //获取userInfo
             String userJson = request.getHeader("token");
-
+//            String tt = propotiesConfiger.getA();
+//            System.out.println(tt);
             if (StringUtils.isNotEmpty(userJson)) {
                 String userName = JwtHelper.getUserName(userJson);
                 String userId = JwtHelper.getUserId(userJson);

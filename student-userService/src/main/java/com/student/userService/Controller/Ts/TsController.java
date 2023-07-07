@@ -1,6 +1,7 @@
 package com.student.userService.Controller.Ts;
 
 import com.github.pagehelper.PageHelper;
+import com.student.userService.Config.PropotiesConfiger;
 import com.student.userService.Domain.Entry.RegionEntry;
 import com.student.userService.Domain.Entry.UserEntry;
 import com.student.userService.Domain.Vo.UserVo;
@@ -11,9 +12,14 @@ import com.student.userService.Utils.LocalThread;
 import com.student.userService.Utils.PagingResult;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.core.env.Environment;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 @RestController
@@ -23,6 +29,17 @@ public class TsController {
     @Autowired
     private TsService tsService;
 
+    @Autowired
+    private PropotiesConfiger propotiesConfiger;
+//
+//
+//    @Autowired
+//    private Environment environment;
+//
+    @Value("${white.list.login}")
+    private String login;
+
+
     /**
      * 获取用户列表
      *
@@ -31,7 +48,8 @@ public class TsController {
      */
     @PostMapping("tsInfo")
     public ApiResult getTsInfo(@RequestBody UserVo userVo) {
-
+        System.out.println(propotiesConfiger.getList());
+        System.out.println(login);
         UserEntry userInfo = LocalThread.get();
         if (userInfo == null) {
             return ApiResult.fail(ErrorConstant.NO_GET_LOGIN, "用户不存在");
@@ -40,6 +58,8 @@ public class TsController {
             PageHelper.startPage(userVo.getPage(), userVo.getPageSize());
         }
         List<UserEntry> userList = tsService.getTsInfo(userVo);
+
+       // Set<String> list=new HashSet<>();
         return ApiResult.success(new PagingResult<>(userList));
     }
 

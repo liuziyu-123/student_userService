@@ -6,6 +6,7 @@ import com.student.userService.Config.PropotiesConfiger;
 import com.student.userService.Utils.ApiResult;
 import com.student.userService.Utils.MyException;
 import com.student.userService.Utils.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -16,33 +17,37 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+
 
 @WebFilter("/**")
+@Slf4j
 public class GlobleFilter implements Filter {
-    List<String> mapList;
 
     @Autowired
     private RedisUtil redisUtil;
 
+    @Autowired
+    private PropotiesConfiger propotiesConfiger;
+
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("过滤器执行了。。。。。。");
+        log.info("过滤器执行了........");
         ServletContext servletContext = filterConfig.getServletContext();
         ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);
-        mapList = map(ctx);
+       // mapList = map(ctx);
         redisUtil = ctx.getBean(RedisUtil.class);
+        propotiesConfiger=ctx.getBean(PropotiesConfiger.class);
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("过滤器执行了");
+        log.info("过滤器执行了");
+
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         //Filter 过滤器跨域处理
-        // Map<String,String> map=propotiesConfiger.getMap();
+  //      String map=propotiesConfiger.getLogin();
         String origin = request.getHeader("Origin");
         response.setHeader("Access-Control-Allow-Origin", origin);
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE, PATCH");
@@ -53,7 +58,7 @@ public class GlobleFilter implements Filter {
         response.setContentType("application/json; charset=utf-8");
         //获取Header中的token
         String uri = request.getRequestURI();
-        for (String item : mapList) {
+        for (String item : propotiesConfiger.getList().values()) {
             if (uri.equals(item) || uri.endsWith(".jpg")) {
                 filterChain.doFilter(servletRequest, servletResponse);
                 return;
@@ -85,16 +90,16 @@ public class GlobleFilter implements Filter {
     }
 
 
-    public List<String> map(ApplicationContext ctx) {
-        List<String> mapList = new ArrayList<>();
-        String login = ctx.getEnvironment().getProperty("white.list.login");
-        String upload = ctx.getEnvironment().getProperty("white.list.upload");
-        String fileUUID = ctx.getEnvironment().getProperty("white.list.fileUUID");
-        String outEx = ctx.getEnvironment().getProperty("white.list.outEx");
-        mapList.add(login);
-        mapList.add(upload);
-        mapList.add(fileUUID);
-        mapList.add(outEx);
-        return mapList;
-    }
+//    public List<String> map(ApplicationContext ctx) {
+//        List<String> mapList = new ArrayList<>();
+//        String login = ctx.getEnvironment().getProperty("white.list.login");
+//        String upload = ctx.getEnvironment().getProperty("white.list.upload");
+//        String fileUUID = ctx.getEnvironment().getProperty("white.list.fileUUID");
+//        String outEx = ctx.getEnvironment().getProperty("white.list.outEx");
+//        mapList.add(login);
+//        mapList.add(upload);
+//        mapList.add(fileUUID);
+//        mapList.add(outEx);
+//        return mapList;
+//    }
 }
